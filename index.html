@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="styles/style.css">
+
+        <title>Menu responsive</title>
+    </head>
+    <body>
+        <header class="header" class="sticky">
+            <a href="#" class="header__logo"><span style="color: #00a37afb;">Report</span> <span style="color: #00a1e0;">Scanner</span></a>
+
+            <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+
+            <nav class="nav" id="nav-menu" >
+                <div class="nav__content bd-grid">
+
+                    <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
+    
+                    <div class="nav__perfil">
+                        <div class="nav__img">
+                            <img src="images/logo.jpeg" alt="">
+                        </div>
+                        
+                        <div>
+                            <a href="#" class="nav__name"><span style="color: rgba(0, 163, 122, 0.986);">Report</span> <span style="color: #00a1e0;">Scanner</span></a>
+                            <span class="nav__profesion">Web designer</span>
+                        </div>
+                    </div>
+    
+                    <div class="nav__menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                            <li class="nav__item"><a href="translator.html" target="_blank" class="nav__link">Scanner</a></li>
+                            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        </ul>
+                    </div> 
+                    
+    
+                    <div>
+                        <button class="btn"><a href="signUp.html">Login/SingUp</a></button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+     <div class="main__container"  id="home">
+        <div class="content"><h1><span style="color: #00a37afb;">GET</span> <span style="color: #00a1e0;">WELL</span> <span style="color: #00a37afb;">SOON</span></h1></div>
+        <div class="logo"><img src="images/logo.jpeg" alt="" class="main-logo-img"></div>
+     </div>
+
+     <section class="contact" id="contact">
+        <div class="contact-text">
+            <h1 class="title">Contact <span>Us!</span></h1>
+            <h4>If you have any doubt in your mind..</h4>
+            <div class="list">
+                <li><a href="#">ujjwaltyagi163@gmail.com</a></li>
+                <div class="nav__social">
+                    <a href="#" class="nav__social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="#" class="nav__social-icon"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="#" class="nav__social-icon"><ion-icon name="call"></ion-icon></a>
+                </div>
+            </div>
+    
+            <div class="contact-icons">
+                <a href="https://ujjwaltyagi163@gmail.com" target="blank"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="1e048c9b-3f98-41bd-afe1-3709e0dbe7b0">
+    
+                <input type="name" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="number" name="number" placeholder="Your Mobile Number" required>
+                <textarea name="message" id="" cols="10" rows="5" placeholder="How Can I Help You "></textarea>
+                <!-- <input type="submit"> -->
+                <input type="submit" value="Send Messages" class="submit" required>
+            </form>
+        </div>
+    </section>
+
+        
+         
+        <!--===== MAIN JS =====-->
+        <script src="main.js"></script>
+
+        <!-- ===== IONICONS ===== -->
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+        <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      ></script>
+
+    </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sign Up | Log In</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header class="header" class="sticky">
+    <a href="#" class="header__logo"><span style="color: #00a37afb;">Report</span> <span style="color: #00a1e0;">Scanner</span></a>
+
+    <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+
+    <nav class="nav" id="nav-menu">
+        <div class="nav__content bd-grid">
+
+            <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
+
+            <div class="nav__perfil">
+                <div class="nav__img">
+                    <img src="images/logo.jpeg" alt="">
+                </div>
+                
+                <div>
+                    <a href="#" class="nav__name"><span style="color: rgba(0, 163, 122, 0.986);">Report</span> <span style="color: #00a1e0;">Scanner</span></a>
+                    <span class="nav__profesion">Web designer</span>
+                </div>
+            </div>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" target="_blank" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="translator.html" target="_blank" class="nav__link">Scanner</a></li>
+                    <li class="nav__item"><a href="index.html" target="_blank" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <button class="btn"><a href="signUp.html">Login/SingUp</a></button>
+            </div>
+        </div>
+    </nav>
+</header>
+  <div class="wrapper">
+    <div class="title-text">
+      <div class="title login">
+        Account
+      </div>
+      <div class="title signup">
+        Account
+      </div>
+    </div>
+    <div class="form-container">
+      <div class="slide-controls">
+        <input type="radio" name="slide" id="login" checked>
+        <input type="radio" name="slide" id="signup">
+        <label for="login" class="slide login">Login</label>
+        <label for="signup" class="slide signup">SignUp</label>
+        <div class="slider-tab"></div>
+      </div>
+      <div class="form-inner">
+        <form action="#" class="login">
+          <div class="field">
+            <input type="text" placeholder="Email Address" required>
+          </div>
+          <div class="field">
+            <input type="password" placeholder="Password" required>
+          </div>
+          <div class="pass-link">
+            <a href="#">Reset password?</a>
+          </div>
+          <div class="field btn">
+            <div class="btn-layer"></div>
+            <input type="submit" value="Login">
+          </div>
+          <div class="signup-link">
+            Don't Have Account? <a href="">Create A New</a>
+          </div>
+        </form>
+        <form action="#" class="signup">
+          <div class="field">
+            <input type="email" placeholder="Email Address" required>
+          </div>
+          <div class="field">
+            <input type="password" placeholder="Password" required>
+          </div>
+          <div class="field">
+            <input type="password" placeholder="Confirm Password" required>
+          </div>
+          <div class="field btn">
+            <div class="btn-layer"></div>
+            <input type="submit" value="SignUp">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const loginText = document.querySelector(".title-text .login");
+    const loginForm = document.querySelector("form.login");
+    const loginBtn = document.querySelector("label.login");
+    const signupBtn = document.querySelector("label.signup");
+    const signupLink = document.querySelector("form .signup-link a");
+    signupBtn.onclick = (() => {
+      loginForm.style.marginLeft = "-50%";
+      loginText.style.marginLeft = "-50%";
+    });
+    loginBtn.onclick = (() => {
+      loginForm.style.marginLeft = "0%";
+      loginText.style.marginLeft = "0%";
+    });
+    signupLink.onclick = (() => {
+      signupBtn.click();
+      return false;
+    });
+  </script>
+
+<script src="main.js"></script>
+</body>
+
+</html>
